@@ -1,3 +1,4 @@
-# CrackYourInternship_challenge
-This repo contains daily problems solved during my internship preparation.
+# DSA problems
+
+## This repo contains DSA problems from Leetcode, GFG.
 
