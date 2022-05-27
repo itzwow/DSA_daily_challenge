@@ -52,3 +52,25 @@ public:
         return ans;
     }
 };
+
+
+// optimised apporach using  hashing
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        vector<int> ans;
+        int n = nums.size();
+        unordered_map<int,int> m;
+        for(int i=0;i<n;i++){
+            int rem = target-nums[i];
+                if(m.find(rem)!=m.end()){
+                    ans.push_back(i+1);
+                    ans.push_back(m[rem]+1);
+                }
+                m[nums[i]]=i;
+            }
+        
+       sort(ans.begin(), ans.end());
+        return ans;
+    }
+};
