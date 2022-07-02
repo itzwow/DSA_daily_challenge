@@ -88,8 +88,18 @@ public:
     }
 };
  
+
+int func(int n){
+    while (n>1)
+    {
+       n--;
+       return (n/2);
+    }
+    
+}
+
 int main()
 {
-    
+    cout<<func(90)<<endl;
     return 0;
 }
